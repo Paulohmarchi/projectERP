@@ -1,0 +1,13 @@
+br\faj\products\gateway\ProductGateway.class
+br\faj\products\gateway\mongodb\entity\ProductEntity.class
+br\faj\products\gateway\mongodb\entity\IndustrialEntity.class
+br\faj\products\domain\Product.class
+br\faj\products\gateway\mongodb\FeatureRepository.class
+br\faj\products\gateway\FeatureGateway.class
+br\faj\products\domain\Industrial.class
+br\faj\products\gateway\mongodb\IndustrialRepository.class
+br\faj\products\App.class
+br\faj\products\gateway\IndustrialGateway.class
+br\faj\products\domain\Feature.class
+br\faj\products\gateway\mongodb\entity\FeatureEntity.class
+br\faj\products\gateway\mongodb\ProductRepository.class

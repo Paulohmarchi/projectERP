@@ -1,0 +1,13 @@
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\domain\Industrial.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\App.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\FeatureGateway.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\mongodb\FeatureRepository.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\mongodb\entity\ProductEntity.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\domain\Product.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\ProductGateway.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\mongodb\entity\FeatureEntity.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\domain\Feature.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\mongodb\ProductRepository.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\mongodb\entity\IndustrialEntity.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\IndustrialGateway.java
+C:\Users\paulohmarchi\Desktop\projectapp\src\main\java\br\faj\products\gateway\mongodb\IndustrialRepository.java
