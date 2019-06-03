@@ -12,4 +12,6 @@ public interface ProductGateway {
     Product findByBarcode(String barcode);
     List<Product> findAll();
 
+    Product save(Product productSave);
+
 }

@@ -11,7 +11,8 @@ public interface FeatureGateway {
     Feature getById(String id);
     Feature findByValue(String value);
     Feature findByType(String type);
-    Feature findByProduct(List<Product> product);
     List<Feature> findAll();
+
+    Feature save(Feature featureSave);
 
 }

@@ -2,10 +2,13 @@ package br.faj.products.gateway.mongodb.entity;
 
 
 import br.faj.products.domain.Product;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.List;
 
+@Document(collection = "product")
 public class FeatureEntity {
 
     @Field(value = "id")
@@ -15,7 +18,8 @@ public class FeatureEntity {
     @Field("value")
     private String value;
     @Field("features")
-    private List<Product> product;
+    @DBRef
+    private ProductEntity product;
 
     public String getId() {
         return id;
@@ -41,11 +45,7 @@ public class FeatureEntity {
         this.value = value;
     }
 
-    public List<Product> getProduct() {
-        return product;
-    }
+    public void setProduct(ProductEntity product) {  this.product = product;  }
 
-    public void setProduct(List<Product> product) {
-        this.product = product;
-    }
+    public ProductEntity getProduct() { return product;   }
 }

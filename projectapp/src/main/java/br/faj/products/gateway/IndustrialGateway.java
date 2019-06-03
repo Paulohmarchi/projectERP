@@ -17,4 +17,6 @@ public interface IndustrialGateway {
     Industrial findByCep(String cep);
     Industrial findByEmail(String email);
     List<Industrial> findAll();
+
+    Industrial save (Industrial industrialSave);
 }

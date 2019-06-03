@@ -1,7 +1,12 @@
 package br.faj.products.gateway.mongodb.entity;
 
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.util.List;
+
+@Document
 public class IndustrialEntity {
 
     @Field(value = "id")
@@ -24,6 +29,10 @@ public class IndustrialEntity {
     private String cep;
     @Field("email")
     private String email;
+    @Field("products")
+    @DBRef
+    private List<ProductEntity> products;
+
 
     public String getId() {
         return id;
@@ -103,5 +112,13 @@ public class IndustrialEntity {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<ProductEntity> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<ProductEntity> products) {
+        this.products = products;
     }
 }

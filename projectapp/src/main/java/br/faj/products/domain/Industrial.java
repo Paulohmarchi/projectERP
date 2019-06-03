@@ -1,19 +1,35 @@
 package br.faj.products.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Industrial {
 
+    @JsonProperty("id")
     private String id;
+    @JsonProperty("cnpj")
     private String cnpj;
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("socialReason")
     private String socialReason;
+    @JsonProperty("telephone")
     private String telephone;
+    @JsonProperty("cellphone")
     private String cellphone;
+    @JsonProperty("address1")
     private String address1;
+    @JsonProperty("address2")
     private String address2;
+    @JsonProperty("cep")
     private String cep;
+    @JsonProperty("email")
     private String email;
+    @JsonProperty("products")
+    private List<Product> products;
 
     public String getId() {
         return id;
@@ -93,5 +109,13 @@ public class Industrial {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 }
