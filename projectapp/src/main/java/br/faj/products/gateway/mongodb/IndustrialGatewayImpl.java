@@ -75,4 +75,9 @@ public class IndustrialGatewayImpl implements IndustrialGateway {
     public List<Industrial> findAll() {
         return industrialRepository.findAll().stream().map(industrialMapper::mapParaDomain).collect(Collectors.toList());
     }
+
+    @Override
+    public Industrial save(Industrial industrialSave) {
+        return industrialMapper.mapParaDomain(industrialRepository.save(industrialMapper.mapParaEntityn(industrialSave)));
+    }
 }

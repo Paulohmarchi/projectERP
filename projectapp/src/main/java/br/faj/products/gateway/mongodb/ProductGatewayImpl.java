@@ -46,4 +46,9 @@ public class ProductGatewayImpl implements ProductGateway {
     public List<Product> findAll() {
         return productRepository.findAll().stream().map(productMapper::mapParaDomain).collect(Collectors.toList());
     }
+
+    @Override
+    public Product save(Product productSave) {
+        return productMapper.mapParaDomain(productRepository.save(productMapper.mapParaEntityn(productSave)));
+    }
 }
